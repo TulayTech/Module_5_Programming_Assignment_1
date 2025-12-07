@@ -27,5 +27,30 @@ import javafx.geometry.Pos;                  // For alignment of the grid
 
 
 public class Exercise14_01 {
-    
+
+        // Creates a GridPane container
+        GridPane gridPane = new GridPane();
+
+        // Add spacing between rows and columns
+        gridPane.setHgap(10);   // Horizontal gap between columns
+        gridPane.setVgap(10);   // Vertical gap between rows
+
+        // Add padding around the entire grid
+        gridPane.setPadding(new Insets(10, 10, 10, 10));
+
+        // Center the grid on the scene
+        gridPane.setAlignment(Pos.CENTER);
+
+        // Load images
+        Image imgUSA    = new Image("src/images/flag1.gif"); // American flag
+        Image imgUK     = new Image("src/images/flag2.gif"); // British flag
+        Image imgFrance = new Image("src/images/flag6.gif"); // French flag
+        Image imgChina  = new Image("src/images/flag7.gif"); // Chinese flag
+
+        // Wrap images in ImageView node
+        ImageView ivUSA    = new ImageView(imgUSA);
+        ImageView ivUK     = new ImageView(imgUK);
+        ImageView ivFrance = new ImageView(imgFrance);
+        ImageView ivChina  = new ImageView(imgChina);
+
 }
