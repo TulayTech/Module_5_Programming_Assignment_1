@@ -26,8 +26,10 @@ import javafx.geometry.Insets;               // For padding around the grid
 import javafx.geometry.Pos;                  // For alignment of the grid
 
 
-public class Exercise14_01 {
+public class Exercise14_01 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
         // Creates a GridPane container
         GridPane gridPane = new GridPane();
 
@@ -52,5 +54,5 @@ public class Exercise14_01 {
         ImageView ivUK     = new ImageView(imgUK);
         ImageView ivFrance = new ImageView(imgFrance);
         ImageView ivChina  = new ImageView(imgChina);
-
+    }
 }
